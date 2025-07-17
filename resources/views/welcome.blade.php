@@ -103,7 +103,7 @@
 
             <div class="d-flex">
               <a href="{{ route('frontend.sk.form') }}" class="btn-get-started">Tambah Data</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
           </div>
 
@@ -207,7 +207,9 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Bagaimana cara mencari data?</h3>
                 <div class="faq-content">
-                  <p>Silahkan mengikuti tutorial pada video yang disediakan.</p>
+                  <p>1. Silahkan input NIDN atau ID akun yang diberikan oleh operator.</p>
+                  <p>2. Kemudian klik button verifikasi, nanti akan muncul notifikasi apabila NIDN yang diinputkan benar atau salah.</p>
+                  <p>3. Lalu masukan kata kunci pencarian berupa judul atau kategori SK, kemudian klik cari</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
