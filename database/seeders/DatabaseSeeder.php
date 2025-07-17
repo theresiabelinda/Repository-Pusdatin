@@ -43,5 +43,22 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Farel Yosua Sualang',
             'nidn' => '2323039201',
         ]);
+
+        DB::table('repositorimahasiswa')->insert([
+            'judul' => 'Implementasi PDDikti Kepada Masyarakat Jelata',
+            'abstrak' => 'Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development.',
+            'penulis' => 'Galuh Eka Pramana',
+            'tahun' => '2025',
+            'file_cover' => 'cover.pdf',
+            'file_pengesahan' => 'pengesahan.pdf',
+            'file_abstrakdandaftarisi' => 'abstrakdandaftarisi.pdf',
+            'file_bab1' => 'bab1.pdf',
+            'file_bab2' => 'bab2.pdf',
+            'file_bab3' => 'bab3.pdf',
+            'file_bab4'=> 'bab4.pdf',
+            'file_bab5' => 'bab5.pdf',
+            'file_lampiran' => 'lampiran.pdf',
+            'id_kategori' => 1,
+        ]);
     }
 }

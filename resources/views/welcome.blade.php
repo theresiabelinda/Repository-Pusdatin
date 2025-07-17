@@ -50,7 +50,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">Repository</a></li>
           <li><a href="#faq-2">FAQ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -121,37 +121,50 @@
     <section id="about" class="about section">
 
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-    </div><!-- End Section Title -->
-
+    <div class="container section-title" data-aos="fade-up" id="tentang">
+    <h2 class="text-center">Sistem Repository Mahasiswa</h2>
+    <p> Berisi skripsi, tesis dan disertasi Sekolah Tinggi Teologi Injili Yogyakarta </p>
+    </div>
     <div class="container">
-        <div class="row gy-4">
-
-        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-            Repository Pusdatin merupakan wadah digital untuk menyimpan, mengelola, dan mendistribusikan berbagai dokumen dan informasi penting yang berkaitan dengan kegiatan akademik, penelitian, dan pengembangan kampus.
-            </p>
-            <ul>
-            <li><i class="bi bi-check2-circle"></i> <span>Akses terbuka untuk seluruh sivitas akademika.</span></li>
-            <li><i class="bi bi-check2-circle"></i> <span>Mendukung transparansi dan kemudahan dalam mencari dokumen institusi.</span></li>
-            <li><i class="bi bi-check2-circle"></i> <span>Dikelola secara profesional dan terintegrasi dengan sistem informasi lainnya.</span></li>
-            </ul>
+      <div class="row gy-4">
+            <!-- Form Search -->
+            <form action="{{ route('repositorimahasiswa.index') }}" method="GET" class="mt-3">
+                <div class="input-group">
+                    <input type="text" name="search" class="form-control" placeholder="Cari judul, penulis, tahun..." value="{{ request('search') }}">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="bi bi-search"></i> Cari
+                    </button>
+                </div>
+            </form>
         </div>
+    </div>
+</div>
 
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>
-             Melalui platform ini, kami berkomitmen untuk menyediakan layanan informasi yang cepat, akurat, dan dapat diandalkan. 
-             Semua data tersimpan dengan sistem keamanan tinggi dan dapat diakses sesuai kebutuhan pengguna. 
-             Kami terus berinovasi untuk menciptakan sistem repository yang modern dan mudah digunakan.
-            </p>
-            <a href="#" class="read-more"><span>Selengkapnya</span><i class="bi bi-arrow-right"></i></a>
-        </div>
-
-        </div>
     </div>
     
     </section><!-- /About Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/bg/bg-8.webp" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Unggah Mandiri Tugas Akhir Mahasiswa</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Self Upload</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
 
     <!-- Faq 2 Section -->
     <section id="faq-2" class="faq-2 section light-background">

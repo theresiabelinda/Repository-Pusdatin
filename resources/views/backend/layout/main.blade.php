@@ -11,6 +11,7 @@
         <link href="{{asset('assets/css/styles.css')}}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
+    
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
@@ -75,6 +76,11 @@
                             <a class="nav-link" href="{{ route('berita.index') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Daftar Surat Keputusan
+                            </a>
+
+                            <a class="nav-link" href="{{ route('repositorimahasiswa.index') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                                Repository Mahasiswa
                             </a>
 
                         </div>

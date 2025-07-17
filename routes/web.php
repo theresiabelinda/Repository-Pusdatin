@@ -11,6 +11,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PeriodeController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\FrontendSuratController;
+use App\Http\Controllers\RepositoriMahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +78,13 @@ Route::group(['middleware' => 'auth:user'], function(){
         Route::get('/berita/ubah/{id}',[BeritaController::class, 'ubah'])->name('berita.ubah');
         Route::post('/berita/prosesUbah',[BeritaController::class, 'prosesUbah'])->name('berita.prosesUbah');
         Route::get('/berita/hapus/{id}',[BeritaController::class, 'hapus'])->name('berita.hapus');
+
+        Route::get('/repositorimahasiswa',[RepositoriMahasiswaController::class, 'index'])->name('repositorimahasiswa.index');
+        Route::get('/repositorimahasiswa/tambah',[RepositoriMahasiswaController::class, 'tambah'])->name('repositorimahasiswa.tambah');
+        Route::post('/repositorimahasiswa/prosesTambah',[RepositoriMahasiswaController::class, 'prosesTambah'])->name('repositorimahasiswa.prosesTambah');
+        Route::get('/repositorimahasiswa/ubah/{id}',[RepositoriMahasiswaController::class, 'ubah'])->name('repositorimahasiswa.ubah');
+        Route::post('/repositorimahasiswa/prosesUbah',[RepositoriMahasiswaController::class, 'prosesUbah'])->name('repositorimahasiswa.prosesUbah');
+        Route::get('/repositorimahasiswa/hapus/{id}',[RepositoriMahasiswaController::class, 'hapus'])->name('repositorimahasiswa.hapus');
 
         Route::get('/periode',[PeriodeController::class, 'index'])->name('periode.index');
         Route::get('/periode/tambah',[PeriodeController::class, 'tambah'])->name('periode.tambah');

@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Berita;
+use App\Models\RepositoriMahasiswa;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
     public function index(){
-        $berita = Berita::with('kategori')->latest()->take(50)->get(); // ambil 50 surat terakhir, bisa sesuaikan
-        return view('backend.content.dashboard', compact('berita'));
+        $berita = Berita::with('kategori')->latest()->take(7)->get();
+        $repositorimahasiswa = RepositoriMahasiswa::with('kategori')->latest()->take(7)->get();
+        return view('backend.content.dashboard', compact('berita','repositorimahasiswa'));
     }
 
     public function profile(){
