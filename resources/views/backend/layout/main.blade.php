@@ -63,25 +63,31 @@
                                 Daftar Periode
                             </a>
 
-                            <a class="nav-link" href="{{ route('user.index') }}">
-                                <div class="sb-nav-link-icon"><i class="fas fa-server"></i></div>
-                                Daftar Akun
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePengguna" aria-expanded="false" aria-controls="collapsePengguna">
+                                <div class="sb-nav-link-icon"><i class="fas fa-users-cog"></i></div>
+                                Manajemen Pengguna
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-
-                            <a class="nav-link" href="{{ route('dosen.index') }}">
-                                <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
-                                Daftar Dosen
-                            </a>
+                            <div class="collapse" id="collapsePengguna">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="{{ route('user.index') }}">
+                                        <i class="fas fa-server me-2"></i> Daftar Akun
+                                    </a>
+                                    <a class="nav-link" href="{{ route('dosen.index') }}">
+                                        <i class="fas fa-user me-2"></i> Daftar Dosen
+                                    </a>
+                                </nav>
+                            </div>
 
                             <a class="nav-link" href="{{ route('berita.index') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Daftar Surat Keputusan
                             </a>
 
-                            <a class="nav-link" href="{{ route('repositorimahasiswa.index') }}">
+                            <!-- <a class="nav-link" href="{{ route('repositorimahasiswa.index') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                                 Repository Mahasiswa
-                            </a>
+                            </a> -->
 
                         </div>
                     </div>

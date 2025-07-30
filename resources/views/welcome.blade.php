@@ -50,7 +50,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">Repository</a></li>
+          <!-- <li><a href="#about">Repository</a></li> -->
           <li><a href="#faq-2">FAQ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -121,23 +121,23 @@
     <section id="about" class="about section">
 
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up" id="tentang">
+    <!-- <div class="container section-title" data-aos="fade-up" id="tentang">
     <h2 class="text-center">Sistem Repository Mahasiswa</h2>
     <p> Berisi skripsi, tesis dan disertasi Sekolah Tinggi Teologi Injili Yogyakarta </p>
     </div>
     <div class="container">
-      <div class="row gy-4">
-            <!-- Form Search -->
-            <form action="{{ route('repositorimahasiswa.index') }}" method="GET" class="mt-3">
-                <div class="input-group">
-                    <input type="text" name="search" class="form-control" placeholder="Cari judul, penulis, tahun..." value="{{ request('search') }}">
-                    <button class="btn btn-primary" type="submit">
-                        <i class="bi bi-search"></i> Cari
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
+      <div class="row gy-4"> -->
+        <!-- Form Search -->
+        <!-- <form action="{{ route('repositorimahasiswa.index') }}" method="GET" class="mt-3">
+          <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Cari judul, penulis, tahun..." value="{{ request('search') }}">
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i> Cari
+            </button>
+          </div>
+        </form>
+      </div>
+    </div> -->
 </div>
 
     </div>
@@ -145,7 +145,7 @@
     </section><!-- /About Section -->
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+    <!-- <section id="call-to-action" class="call-to-action section dark-background">
 
       <img src="assets/img/bg/bg-8.webp" alt="">
 
@@ -164,7 +164,7 @@
 
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section>/Call To Action Section -->
 
     <!-- Faq 2 Section -->
     <section id="faq-2" class="faq-2 section light-background">

@@ -23,11 +23,16 @@
 
                         <div class="mb-3">
                             <label for="penerima" class="form-label fw-semibold">Nama Dosen</label>
-                            <input type="text" name="penerima" id="penerima"
-                                class="form-control @error('penerima') is-invalid @enderror"
-                                value="{{ old('penerima') }}" placeholder="Masukkan nama dosen">
+                            <select name="penerima" id="penerima" class="form-select @error('penerima') is-invalid @enderror" required>
+                                <option value="">-- Pilih Dosen --</option>
+                                @foreach ($dosen as $item)
+                                <option value="{{ $item->nama }}" {{ old('penerima') == $item->nama ? 'selected' : '' }}>
+                                    {{ $item->nama }} 
+                                </option>
+                                @endforeach
+                            </select>
                             @error('penerima')
-                                <div class="invalid-feedback">{{ $message }}</div>
+                            <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
 

@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('kategori')->insert([
-            'nama_kategori' => 'SK Mengajar'
+            'nama_kategori' => 'SK Yudisium'
         ]);
         
         DB::table('periode')->insert([

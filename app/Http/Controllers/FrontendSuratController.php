@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Periode;
 use App\Models\Kategori;
 use App\Models\User;
+use App\Models\Dosen;
 use App\Models\Berita;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -16,6 +17,7 @@ public function form()
     return view('frontend.tambah-sk', [
         'periode' => Periode::all(),
         'kategori' => Kategori::all(),
+        'dosen' => Dosen::all(),
     ]);
 }
 
